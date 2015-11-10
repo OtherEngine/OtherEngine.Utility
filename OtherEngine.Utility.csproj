@@ -38,13 +38,6 @@
     <Compile Include="EnumerableExtensions.cs" />
     <Compile Include="EnumerableExceptions.cs" />
     <Compile Include="CollectionExtensions.cs" />
-    <Compile Include="Bits\IBitArray.cs" />
-    <Compile Include="Bits\BitList.cs" />
-    <Compile Include="Bits\BitVector8.cs" />
-    <Compile Include="Bits\BitVector16.cs" />
-    <Compile Include="Bits\BitVector32.cs" />
-    <Compile Include="Bits\BitVector64.cs" />
-    <Compile Include="Bits\BitArrayExtensions.cs" />
     <Compile Include="Attributes\AttributeUsageException.cs" />
     <Compile Include="Attributes\ValidatedAttribute.cs" />
     <Compile Include="Attributes\AttributeUtils.cs" />
@@ -53,7 +46,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Folder Include="Bits\" />
     <Folder Include="Attributes\" />
   </ItemGroup>
 </Project>
