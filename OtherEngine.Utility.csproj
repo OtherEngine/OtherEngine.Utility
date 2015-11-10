@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0CCC3EF8-30D8-4F24-9C12-3459AB7F11FD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>OtherEngine.Utility</RootNamespace>
+    <AssemblyName>OtherEngine.Utility</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseMSBuildEngine>False</UseMSBuildEngine>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="HashHelper.cs" />
+    <Compile Include="EnumerableExtensions.cs" />
+    <Compile Include="EnumerableExceptions.cs" />
+    <Compile Include="CollectionExtensions.cs" />
+    <Compile Include="Bits\IBitArray.cs" />
+    <Compile Include="Bits\BitList.cs" />
+    <Compile Include="Bits\BitVector8.cs" />
+    <Compile Include="Bits\BitVector16.cs" />
+    <Compile Include="Bits\BitVector32.cs" />
+    <Compile Include="Bits\BitVector64.cs" />
+    <Compile Include="Bits\BitArrayExtensions.cs" />
+    <Compile Include="Attributes\AttributeUsageException.cs" />
+    <Compile Include="Attributes\ValidatedAttribute.cs" />
+    <Compile Include="Attributes\AttributeUtils.cs" />
+    <Compile Include="DictionaryExtensions.cs" />
+    <Compile Include="Attributes\AttributeInstanciationException.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Bits\" />
+    <Folder Include="Attributes\" />
+  </ItemGroup>
+</Project>
