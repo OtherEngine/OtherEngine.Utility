@@ -21,9 +21,9 @@ namespace OtherEngine.Utility
 			return new ReadOnlyCollectionWrapper<T>(collection);
 		}
 
-		#region ReadOnlyCollectionWrapper class definition
+		#region ReadOnlyCollectionWrapper struct definition
 
-		class ReadOnlyCollectionWrapper<T> : IReadOnlyCollection<T>
+		struct ReadOnlyCollectionWrapper<T> : IReadOnlyCollection<T>
 		{
 			readonly ICollection<T> _collection;
 
